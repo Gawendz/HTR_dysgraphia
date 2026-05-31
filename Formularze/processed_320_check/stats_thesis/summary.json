@@ -1,0 +1,14 @@
+{
+  "processed_dir": "C:\\Magisterka\\Formularze\\processed_320_check",
+  "reference_year": 2026,
+  "forms": 320,
+  "line_slots_total": 2560,
+  "exported_line_images_manifest": 2313,
+  "dataset_png": 2313,
+  "kraken_png": 2313,
+  "kraken_gt_txt": 2313,
+  "qwen_jsonl_rows": 2313,
+  "trocr_csv_rows": 2313,
+  "non_exported_line_slots": 247,
+  "forms_reviewed": 320
+}

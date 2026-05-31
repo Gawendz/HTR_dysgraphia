@@ -1,0 +1,34 @@
+[
+  {
+    "sample_id": "239_p01_C_l02",
+    "image": "images/239_p01_C_l02.png",
+    "source_dataset": "polish_forms",
+    "group": "excluded_from_evaluation",
+    "display_reference": "ID: A-204; status=OK; temp=23.5°C.",
+    "note": "Próbka wyłączona z ewaluacji; transkrypcja nie jest pewnym ground truth."
+  },
+  {
+    "sample_id": "239_p01_C_l05",
+    "image": "images/239_p01_C_l05.png",
+    "source_dataset": "polish_forms",
+    "group": "excluded_from_evaluation",
+    "display_reference": "O 21:30 rozpoczęło się ważne spotkanie zespołu.",
+    "note": "Próbka wyłączona z ewaluacji; transkrypcja nie jest pewnym ground truth."
+  },
+  {
+    "sample_id": "239_p01_C_l08",
+    "image": "images/239_p01_C_l08.png",
+    "source_dataset": "polish_forms",
+    "group": "excluded_from_evaluation",
+    "display_reference": "ANALIZA WYKAZAŁA SKUTECZNOŚĆ 87%.",
+    "note": "Próbka wyłączona z ewaluacji; transkrypcja nie jest pewnym ground truth."
+  },
+  {
+    "sample_id": "PD_15_t3_l1_auto_invert",
+    "image": "images/PD_15_t3_l1_auto_invert.png",
+    "source_dataset": "malaysian",
+    "group": "excluded_from_evaluation",
+    "display_reference": "Brak pewnej transkrypcji; próbka wyłączona z ewaluacji.",
+    "note": "Malaysian PD, próbka wyłączona z ewaluacji."
+  }
+]

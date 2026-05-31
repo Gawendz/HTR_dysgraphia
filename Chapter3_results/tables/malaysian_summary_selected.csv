@@ -1,0 +1,13 @@
+model,variant,dataset,samples,corpus_cer,corpus_wer,corpus_cla,corpus_crw
+Qwen3VL,zero-shot,Malaysian raw,424,0.073898,0.234227,0.945075,0.777603
+Qwen3VL,zero-shot,Malaysian inverted,424,0.073417,0.231467,0.946243,0.783517
+Qwen3VL,Polish LoRA standard,Malaysian raw,424,0.080566,0.228707,0.939919,0.785095
+Qwen3VL,Polish LoRA standard,Malaysian inverted,424,0.084141,0.230284,0.934901,0.779574
+Qwen3VL,mixed-domain LoRA held-out,Malaysian inverted,66,0.010762,0.02584,0.993722,0.976744
+TrOCR-large,zero-shot,Malaysian raw,424,0.451227,1.051262,0.602117,0.080047
+TrOCR-large,zero-shot,Malaysian inverted,424,0.190142,0.76459,0.841411,0.356861
+TrOCR-large,full FT standard,Malaysian inverted,424,0.90871,1.156546,0.205197,0.001972
+TrOCR-large,soft FT,Malaysian inverted,424,0.288307,0.724763,0.759263,0.293375
+Kraken/CRNN,zero-shot,Malaysian raw,424,0.923077,1.023265,0.690245,0.0
+Kraken/CRNN,zero-shot,Malaysian inverted,424,0.405788,0.925079,0.677116,0.10489
+Kraken/CRNN,FT standard,Malaysian inverted,424,0.663848,1.057571,0.580257,0.009858

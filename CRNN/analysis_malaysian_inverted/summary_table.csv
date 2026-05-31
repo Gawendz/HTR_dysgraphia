@@ -1,0 +1,4 @@
+Model,Dataset,Variant,N,Corpus CER,Corpus WER,Corpus CLA,Corpus CRW,Exact Match,Sec/sample,RSS max MB,VRAM alloc MB,VRAM reserv MB
+CRNN/Kraken,iam,native,200,0.447,0.911,0.691,0.102,0.000,0.385,845.000,N/A,N/A
+CRNN/Kraken,malaysian,auto_invert,424,0.406,0.925,0.677,0.105,0.002,0.347,856.066,N/A,N/A
+CRNN/Kraken,malaysian,raw,424,0.923,1.023,0.690,0.000,0.000,0.249,840.828,N/A,N/A

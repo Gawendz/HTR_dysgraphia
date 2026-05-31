@@ -1,0 +1,29 @@
+{
+  "family": "Qwen3VL",
+  "source_results": "C:\\Magisterka\\Qwen3VL\\results\\malaysian_inverted",
+  "best_malaysian_auto_invert_model_for_char_analysis": "Qwen/Qwen3-VL-2B-Instruct",
+  "source_checkpoint_for_char_analysis": "Qwen/Qwen3-VL-2B-Instruct",
+  "notes": [
+    "Current analysis uses the auto-invert/raw result set only.",
+    "Malaysian rows include auto_invert and raw variants.",
+    "IAM rows use the native variant and serve as the baseline inside the same result set."
+  ],
+  "png_outputs": [
+    "summary_table.png",
+    "iam_baseline_table.png",
+    "malaysian_lpd_pd_table.png",
+    "malaysian_inverted_table.png",
+    "corpus_cer_by_dataset_variant.png",
+    "corpus_wer_by_dataset_variant.png",
+    "iam_baseline_cer_wer.png",
+    "malaysian_lpd_pd_auto_invert_cer.png",
+    "malaysian_lpd_pd_auto_invert_wer.png",
+    "malaysian_auto_invert_vs_raw_cer.png",
+    "malaysian_auto_invert_vs_raw_wer.png",
+    "latency_by_dataset_variant.png",
+    "cer_distribution_by_variant.png",
+    "top_char_substitutions.png",
+    "char_substitution_heatmap_top24.png",
+    "error_operation_mix.png"
+  ]
+}

@@ -1,0 +1,20 @@
+﻿split,difficulty_group_label,sex_label,forms,percent
+train,brak trudności,mężczyzna,98,30.63
+train,brak trudności,kobieta,72,22.5
+train,dysgrafia,mężczyzna,52,16.25
+train,inne,kobieta,15,4.69
+test,brak trudności,mężczyzna,11,3.44
+train,inne,mężczyzna,11,3.44
+val,brak trudności,mężczyzna,11,3.44
+val,brak trudności,kobieta,10,3.12
+test,brak trudności,kobieta,9,2.81
+test,dysgrafia,mężczyzna,6,1.88
+val,dysgrafia,mężczyzna,6,1.88
+train,dysgrafia,kobieta,5,1.56
+val,inne,mężczyzna,5,1.56
+test,inne,kobieta,3,0.94
+test,inne,mężczyzna,2,0.62
+test,brak trudności,unknown,1,0.31
+test,dysgrafia,kobieta,1,0.31
+train,dysgrafia,unknown,1,0.31
+val,inne,kobieta,1,0.31

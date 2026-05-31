@@ -1,0 +1,2 @@
+sample_id,dataset,source_dataset,preprocessing_variant,group,difficulty_group,reference,text,gt_status,export_image_path,image_path
+PD_15_t3_l1_excluded_auto_invert,malaysian_excluded,malaysian,auto_invert,PD,PD,,,excluded_from_evaluation,C:\Magisterka\Chapter3_results\figures\malaysian_excluded_PD_15_t3_l1_auto_invert.png,C:\Magisterka\Chapter3_results\figures\malaysian_excluded_PD_15_t3_l1_auto_invert.png

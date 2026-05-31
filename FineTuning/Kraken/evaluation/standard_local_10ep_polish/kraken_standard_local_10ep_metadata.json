@@ -1,0 +1,5 @@
+{
+  "model_path": "C:\\Magisterka\\FineTuning\\Kraken\\outputs\\standard_local_10ep\\best_0.9585.safetensors",
+  "load_seconds": 0.15639339992776513,
+  "test_csv": "C:\\Magisterka\\FineTuning\\data\\manifests\\test.csv"
+}

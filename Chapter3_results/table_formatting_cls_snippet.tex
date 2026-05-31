@@ -1,0 +1,32 @@
+% ============================================================
+% Dodatki do _formatting.cls dla estetycznych tabel wynikowych
+% Wklej po:
+% \RequirePackage{multirow}
+% \RequirePackage{tabularx,array}
+% ============================================================
+
+\RequirePackage{makecell}  % łamanie nagłówków tabel: \thead{...\\...}
+\RequirePackage{ragged2e}  % estetyczne wyrównanie tekstu w kolumnach X
+\RequirePackage{siunitx}   % wyrównywanie liczb w kolumnach S
+
+\sisetup{
+  detect-all,
+  output-decimal-marker = {,},
+  group-separator = {\,},
+  group-minimum-digits = 4,
+  table-number-alignment = center
+}
+
+% Kolumny pomocnicze do tabularx.
+% Y: tekst zawijany do szerokości tabeli, wyrównany do lewej.
+% L/C: kolumny o stałej szerokości, jeśli będą potrzebne w innych rozdziałach.
+\newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
+\newcolumntype{L}[1]{>{\RaggedRight\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\Centering\arraybackslash}p{#1}}
+
+% Spójny wygląd nagłówków i odstępów w tabelach.
+\renewcommand\theadfont{\bfseries\small}
+\renewcommand\theadalign{cc}
+\setlength{\tabcolsep}{3.5pt}
+\setlength{\arrayrulewidth}{0.4pt}
+\renewcommand{\arraystretch}{1.2}

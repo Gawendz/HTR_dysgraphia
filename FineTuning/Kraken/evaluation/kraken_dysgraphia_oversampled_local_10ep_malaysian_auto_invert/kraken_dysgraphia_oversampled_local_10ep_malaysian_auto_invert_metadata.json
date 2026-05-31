@@ -1,0 +1,5 @@
+{
+  "model_path": "C:\\Magisterka\\FineTuning\\Kraken\\outputs\\dysgraphia_oversampled_local_10ep\\best_0.9586.safetensors",
+  "load_seconds": 0.14423139998689294,
+  "test_csv": "C:\\Magisterka\\FineTuning\\Kraken\\manifests\\malaysian_auto_invert.csv"
+}

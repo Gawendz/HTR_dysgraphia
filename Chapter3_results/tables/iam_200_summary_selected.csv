@@ -1,0 +1,8 @@
+model,variant,samples,corpus_cer,corpus_wer,corpus_cla,corpus_crw
+Qwen3VL,base,200,0.055659,0.314228,0.979335,0.688286
+Qwen3VL,LoRA standard,200,0.072378,0.346908,0.965524,0.656109
+Qwen3VL,LoRA mixed-domain,200,0.068847,0.33635,0.968224,0.669683
+TrOCR-large,base,200,0.040395,0.104575,0.969159,0.897939
+TrOCR-large,soft FT,200,0.134579,0.33082,0.909761,0.6727
+TrOCR-large,full FT standard,200,0.779751,0.968326,0.378193,0.062343
+Kraken/CRNN,zero-shot,200,0.447248,0.910508,0.690966,0.102061

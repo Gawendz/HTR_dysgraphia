@@ -1,0 +1,11 @@
+torch
+torchvision
+transformers>=5.0.0
+accelerate
+datasets
+peft
+qwen-vl-utils
+jiwer
+pillow<12
+pandas==2.2.2
+openpyxl

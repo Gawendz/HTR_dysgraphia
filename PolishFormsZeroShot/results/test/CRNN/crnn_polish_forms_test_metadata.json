@@ -1,0 +1,27 @@
+{
+  "dataset": "polish_forms",
+  "splits": [
+    "test"
+  ],
+  "limit": null,
+  "auto_invert": false,
+  "metadata": [
+    {
+      "model_id": "CRNN/Kraken",
+      "status": "ok",
+      "error": "",
+      "load_seconds": 0.6536505999974906,
+      "device": "kraken_backend",
+      "rss_before_model_mb": 718.390625,
+      "rss_after_model_mb": 757.25,
+      "rss_model_delta_mb": 38.859375,
+      "cuda_peak_allocated_mb": null,
+      "cuda_peak_reserved_mb": null,
+      "model_path": "C:\\Users\\kubag\\AppData\\Local\\htrmopo\\htrmopo\\78d7d26e-50b3-55f8-b839-c7a882ea2053\\McCATMuS_nfd_nofix_V1.mlmodel",
+      "model_disk_size_mb": 15.424539566040039
+    }
+  ],
+  "torch_version": "2.6.0+cu124",
+  "cuda_available": true,
+  "python": "3.11.5 (tags/v3.11.5:cce6ba9, Aug 24 2023, 14:38:34) [MSC v.1936 64 bit (AMD64)]"
+}

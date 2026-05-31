@@ -1,0 +1,58 @@
+{
+  "dataset": "polish_forms",
+  "splits": [
+    "test"
+  ],
+  "limit": null,
+  "auto_invert": false,
+  "metadata": [
+    {
+      "model_id": "microsoft/trocr-small-handwritten",
+      "status": "ok",
+      "error": "",
+      "load_seconds": 4.614315599901602,
+      "device": "cuda",
+      "dtype": "float16",
+      "rss_before_model_mb": 1053.9609375,
+      "rss_after_model_mb": 1115.54296875,
+      "rss_model_delta_mb": 61.58203125,
+      "cuda_peak_allocated_mb": 163.86962890625,
+      "cuda_peak_reserved_mb": 284.0,
+      "polish_probe_roundtrip": "ąćęłńóśźżĆŁÓŚŻ",
+      "polish_probe_exact": false
+    },
+    {
+      "model_id": "microsoft/trocr-base-handwritten",
+      "status": "ok",
+      "error": "",
+      "load_seconds": 5.471527799963951,
+      "device": "cuda",
+      "dtype": "float16",
+      "rss_before_model_mb": 1321.015625,
+      "rss_after_model_mb": 1423.7890625,
+      "rss_model_delta_mb": 102.7734375,
+      "cuda_peak_allocated_mb": 690.29443359375,
+      "cuda_peak_reserved_mb": 774.0,
+      "polish_probe_roundtrip": "ąćęłńóśźżĄĆĘŁŃÓŚŹŻ",
+      "polish_probe_exact": true
+    },
+    {
+      "model_id": "microsoft/trocr-large-handwritten",
+      "status": "ok",
+      "error": "",
+      "load_seconds": 7.653895499999635,
+      "device": "cuda",
+      "dtype": "float16",
+      "rss_before_model_mb": 1262.78125,
+      "rss_after_model_mb": 1269.125,
+      "rss_model_delta_mb": 6.34375,
+      "cuda_peak_allocated_mb": 1107.21533203125,
+      "cuda_peak_reserved_mb": 1138.0,
+      "polish_probe_roundtrip": "ąćęłńóśźżĄĆĘŁŃÓŚŹŻ",
+      "polish_probe_exact": true
+    }
+  ],
+  "torch_version": "2.6.0+cu124",
+  "cuda_available": true,
+  "python": "3.11.5 (tags/v3.11.5:cce6ba9, Aug 24 2023, 14:38:34) [MSC v.1936 64 bit (AMD64)]"
+}
