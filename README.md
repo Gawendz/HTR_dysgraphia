@@ -37,6 +37,23 @@ results/
   fine_tuning/        Main fine-tuning outputs
 ```
 
+## Quick Start
+
+Clone the repository and install the lightweight Python dependencies:
+
+```bash
+git clone https://github.com/Gawendz/HTR_dysgraphia.git
+cd HTR_dysgraphia
+python -m venv .venv
+source .venv/bin/activate  # Windows PowerShell: .venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+```
+
+The repository is organized as a reproducibility package for the thesis. The
+notebooks can be opened locally in Jupyter/VS Code or uploaded to Google Colab.
+Large model weights that are not tracked in Git should be downloaded separately
+and unpacked into the matching folder under `models/`.
+
 ## Datasets
 
 The experiments used:
@@ -72,6 +89,25 @@ The reusable training and evaluation scripts are stored under `src/`.
 
 If GitHub's notebook preview is temporarily unavailable, download the `.ipynb`
 file and open it in Jupyter, VS Code, or Google Colab.
+
+Notebook overview:
+
+- `qwen3vl_experiments.ipynb`: summarizes Qwen3-VL zero-shot inference, LoRA
+  fine-tuning, dysgraphia oversampling, mixed-domain evaluation, and final
+  comparison plots.
+- `trocr_experiments.ipynb`: summarizes TrOCR-large zero-shot evaluation,
+  standard fine-tuning, dysgraphia-oversampled fine-tuning, soft fine-tuning,
+  and external-domain checks.
+- `kraken_experiments.ipynb`: summarizes Kraken/CRNN zero-shot evaluation,
+  fine-tuning with Kraken, dysgraphia oversampling, and result aggregation.
+
+Typical workflow after cloning:
+
+1. Open one of the notebooks from `notebooks/`.
+2. Run the setup cells to load CSV summaries from `results/tables/`.
+3. Inspect the saved result tables and figures.
+4. For custom experiments, write new outputs to `results/custom_tables/` and
+   `results/custom_figures/` instead of overwriting the thesis outputs.
 
 ## Metrics
 
