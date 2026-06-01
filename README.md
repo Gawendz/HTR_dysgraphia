@@ -61,10 +61,14 @@ be unpacked so that its folders match the structure under `models/`.
 
 ## Notebooks
 
-The `notebooks/` directory contains static report notebooks for the three model
-families. They include the key commands, saved output tables, and embedded PNG
-figures, so they can be inspected without rerunning the experiments. The reusable
-training and evaluation scripts are stored under `src/`.
+The `notebooks/` directory contains re-runnable report notebooks for the three
+model families. They include the key commands, saved output tables, and embedded
+PNG figures, so they can be inspected without rerunning the experiments. In a
+forked repository, the same notebooks can be rerun after replacing or adding
+result files. Helper functions in the notebooks save custom outputs under
+`results/custom_tables/` and `results/custom_figures/`.
+
+The reusable training and evaluation scripts are stored under `src/`.
 
 If GitHub's notebook preview is temporarily unavailable, download the `.ipynb`
 file and open it in Jupyter, VS Code, or Google Colab.
