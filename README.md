@@ -1,7 +1,5 @@
 # HTR Dysgraphia
 
-Official repository for the engineering part of a master's thesis on handwritten text recognition (HTR/OCR) for dysgraphia-related handwriting analysis.
-
 The repository contains the datasets/manifests, model artifacts, notebooks, source code, and result files used in the experiments. The work compares three model families:
 
 - **Qwen3-VL**: multimodal vision-language model evaluated zero-shot and fine-tuned with LoRA,
@@ -56,8 +54,6 @@ The repository includes model artifacts that are small enough for GitHub/LFS:
 - Qwen3-VL LoRA adapter for the dysgraphia-oversampled experiment,
 - Kraken/CRNN fine-tuned checkpoints for standard and dysgraphia-oversampled variants.
 
-The full TrOCR fine-tuned checkpoint contains a multi-gigabyte `model.safetensors` file and is not stored directly in this repository. The `models/trocr_large_dysgraphia_oversampled/README.md` file documents the checkpoint used and why the full weight file is kept outside Git.
-
 ## Notebooks
 
 The `notebooks/` directory contains the cleaned experimental notebooks for the three model families. They are kept as the main readable record of how the experiments were run.
@@ -71,8 +67,4 @@ The reported metrics are:
 - corpus CLA,
 - corpus CRW,
 - inference time,
-- memory usage where measurable.
-
-## Notes
-
-This repository is intended as a clean research artifact, not as a full local working directory. Scratch scripts, thesis drafting notes, one-off probe scripts, ZIP transfer bundles, local virtual environments, and intermediate inspection folders are excluded.
+- memory usage.
