@@ -54,9 +54,20 @@ The repository includes model artifacts that are small enough for GitHub/LFS:
 - Qwen3-VL LoRA adapter for the dysgraphia-oversampled experiment,
 - Kraken/CRNN fine-tuned checkpoints for standard and dysgraphia-oversampled variants.
 
+Large checkpoint files are not stored directly in the repository. In particular, the
+fine-tuned TrOCR `model.safetensors` file is kept externally because it is a
+multi-gigabyte artifact. If an external archive with weights is provided, it should
+be unpacked so that its folders match the structure under `models/`.
+
 ## Notebooks
 
-The `notebooks/` directory contains the cleaned experimental notebooks for the three model families. They are kept as the main readable record of how the experiments were run.
+The `notebooks/` directory contains static report notebooks for the three model
+families. They include the key commands, saved output tables, and embedded PNG
+figures, so they can be inspected without rerunning the experiments. The reusable
+training and evaluation scripts are stored under `src/`.
+
+If GitHub's notebook preview is temporarily unavailable, download the `.ipynb`
+file and open it in Jupyter, VS Code, or Google Colab.
 
 ## Metrics
 

@@ -2,7 +2,7 @@
 
 The thesis experiments used a fine-tuned `microsoft/trocr-large-handwritten` checkpoint.
 
-The model configuration, generation configuration, tokenizer metadata, and `trainer_state.json` are stored here. The final checkpoint file `model.safetensors` is approximately 2.4 GB, so it is intentionally not stored in this GitHub repository. The corresponding training and evaluation code is available in:
+The model configuration, generation configuration, tokenizer metadata, and `trainer_state.json` are stored here. The final checkpoint file `model.safetensors` is approximately 2.4 GB, so it is intentionally not stored in this GitHub repository. It should be distributed through an external archive and placed in this directory before loading the full fine-tuned model. The corresponding training and evaluation code is available in:
 
 - `notebooks/trocr_experiments.ipynb`,
 - `src/fine_tuning/trocr/train_trocr.py`,
