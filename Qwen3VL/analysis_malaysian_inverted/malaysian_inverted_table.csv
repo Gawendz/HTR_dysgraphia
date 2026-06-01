@@ -1,2 +1,0 @@
-Model,Auto CER,Raw CER,Raw-Auto CER,Auto WER,Raw WER,Auto CLA,Raw CLA,Auto CRW,Raw CRW,Auto sec/sample,Raw sec/sample
-Qwen3-VL-2B-Instruct,0.073,0.074,0.000,0.231,0.234,0.946,0.945,0.784,0.778,2.786,2.950

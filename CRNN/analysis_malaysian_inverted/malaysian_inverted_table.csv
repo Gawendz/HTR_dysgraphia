@@ -1,2 +1,0 @@
-Model,Auto CER,Raw CER,Raw-Auto CER,Auto WER,Raw WER,Auto CLA,Raw CLA,Auto CRW,Raw CRW,Auto sec/sample,Raw sec/sample
-CRNN/Kraken,0.406,0.923,0.517,0.925,1.023,0.677,0.690,0.105,0.000,0.347,0.249

@@ -1,3 +1,0 @@
-Model,Group,N,Corpus CER,Corpus WER,Corpus CLA,Corpus CRW,Sec/sample
-Qwen3-VL-2B-Instruct,LPD,248,0.023,0.077,0.980,0.925,2.999
-Qwen3-VL-2B-Instruct,PD,176,0.167,0.509,0.882,0.530,2.487

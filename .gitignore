@@ -1,88 +1,54 @@
-# Python / notebooks
-__pycache__/
+# Keep this repository as a curated research artifact.
+# The default rule ignores local scratch work; tracked files are added explicitly.
+*
+
+# Root metadata
+!.gitignore
+!.gitattributes
+!README.md
+!requirements.txt
+
+# Curated repository content
+!datasets/
+!datasets/**
+!notebooks/
+!notebooks/**
+!src/
+!src/**
+!models/
+!models/**
+!results/
+!results/**
+
+# Never track local/runtime artifacts
 **/__pycache__/
-*.py[cod]
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
-.ipynb_checkpoints/
 **/.ipynb_checkpoints/
-
-# Local environments and dependency folders
-.venv/
-.venv_*/
 **/.venv/
+**/.venv_*/
 **/node_modules/
-
-# Logs and temporary files
+*.pyc
+*.pyo
 *.log
 *.tmp
 *.bak
-_tmp_*
 Thumbs.db
 .DS_Store
 
-# Archives and transfer bundles
+# Transfer bundles and local archives
 *.zip
 *.7z
 *.rar
 *.tar
 *.tar.gz
 
-# Model weights, training checkpoints and optimizer states
-*.safetensors
-*.ckpt
-*.pt
-*.pth
-*.onnx
-*.h5
-pytorch_model.bin
+# Training states that are not selected model artifacts
 optimizer.pt
 scheduler.pt
 scaler.pt
 rng_state.pth
+pytorch_model.bin
+*.ckpt
+*.pt
+*.pth
 
-# Large/generated model directories
-Chapter3_results/models/
-FineTuning/**/outputs/
-FineTuning/**/runs/
-FineTuning/**/wandb/
-
-# Fine-tuning datasets and Colab staging data
-FineTuning/data/
-FineTuning/qwen_mixed_domain/
-FineTuning/malaysian_external_qwen/
-FineTuning/malaysian_external_trocr/
-FineTuning/polish_forms_finetuning/
-
-# Raw or private handwriting images.
-# Keep public manifests/statistics/figures needed by the thesis.
-Dataset/**
-!Dataset/
-!Dataset/**/
-!Dataset/**/*.csv
-!Dataset/**/*.md
-!Dataset/malaysian_labeling_screenshot_copy/**
-
-Formularze/raw_examples/
-Formularze/processed_examples_final/
-Formularze/processed_320_check/**
-!Formularze/processed_320_check/
-!Formularze/processed_320_check/stats_thesis/
-!Formularze/processed_320_check/stats_thesis/**
-
-# Generated local inspection folders
-zip_inspection/
-
-# Unrelated/local scraping scratchpad
-Pobranie linkow/
-
-# Thesis writing drafts and redundant local report exports
-chapter3_wyniki.tex
-chapter4_podsumowanie.tex
-methodology_chatgpt_context.md
-Qwen_final_report/
-TrOCR_final_report/
-Kraken_final_report/
-Comparison/
-make_filename_mod3_reports.py
+# The selected model weights under models/ are intentionally force-added.

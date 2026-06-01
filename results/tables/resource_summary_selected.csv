@@ -1,0 +1,4 @@
+model,variant,inference_seconds_mean,cuda_peak_allocated_mb_max,cuda_peak_reserved_mb_max,rss_after_mb_max
+Qwen3VL,LoRA oversampling,1.494962,4258.5,4348.0,
+TrOCR-large,full FT oversampling,0.149287,1268.8,2256.0,
+Kraken/CRNN,FT oversampling,0.12631,,,1204.6

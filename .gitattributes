@@ -10,3 +10,4 @@
 *.jpeg binary
 *.xlsx binary
 *.pdf binary
+models/**/*.safetensors filter=lfs diff=lfs merge=lfs -text

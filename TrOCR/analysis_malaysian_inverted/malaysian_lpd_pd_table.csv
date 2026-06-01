@@ -1,7 +1,0 @@
-Model,Group,N,Corpus CER,Corpus WER,Corpus CLA,Corpus CRW,Sec/sample
-trocr-base,LPD,248,0.216,0.825,0.801,0.328,1.403
-trocr-base,PD,176,0.390,1.063,0.658,0.140,1.040
-trocr-large,LPD,248,0.146,0.677,0.873,0.453,2.198
-trocr-large,PD,176,0.272,0.923,0.783,0.184,1.748
-trocr-small,LPD,248,0.248,0.828,0.776,0.271,0.223
-trocr-small,PD,176,0.436,1.081,0.618,0.086,0.168

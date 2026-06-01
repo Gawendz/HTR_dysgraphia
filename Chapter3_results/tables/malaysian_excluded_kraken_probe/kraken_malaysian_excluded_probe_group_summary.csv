@@ -1,2 +1,0 @@
-model_id,dataset,source_dataset,preprocessing_variant,group,samples,cer_mean,cla_mean,corpus_edit_distance_chars,corpus_reference_chars,corpus_char_substitutions,corpus_char_insertions,wer_mean,crw_mean,corpus_edit_distance_words,corpus_reference_words,corpus_correct_recognized_words,inference_seconds_mean,cuda_peak_allocated_mb_max,cuda_peak_reserved_mb_max,corpus_cer,corpus_wer,corpus_cla,corpus_crw
-kraken_malaysian_excluded_probe,malaysian_excluded,malaysian,auto_invert,PD,1,35.0,-35.0,35,0,0,35,9.0,0.0,9,0,0,14.421522200107574,,,35.0,9.0,-35.0,0.0

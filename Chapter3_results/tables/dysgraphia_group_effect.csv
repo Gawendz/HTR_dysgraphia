@@ -1,7 +1,0 @@
-model,variant,samples,corpus_cer,corpus_wer
-Qwen3VL,standard,46,0.018591,0.063636
-Qwen3VL,oversampling,46,0.013699,0.063636
-TrOCR-large,standard,46,0.028865,0.093939
-TrOCR-large,oversampling,46,0.01908,0.078788
-Kraken/CRNN,standard,46,0.02593,0.127273
-Kraken/CRNN,oversampling,46,0.021037,0.106061

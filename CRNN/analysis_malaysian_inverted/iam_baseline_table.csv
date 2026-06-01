@@ -1,2 +1,0 @@
-Model,N,IAM CER,IAM WER,IAM CLA,IAM CRW,Exact Match,Sec/sample,RSS max MB,VRAM alloc MB,VRAM reserv MB
-CRNN/Kraken,200,0.447,0.911,0.691,0.102,0.000,0.385,845.000,N/A,N/A

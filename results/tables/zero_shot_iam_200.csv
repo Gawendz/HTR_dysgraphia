@@ -1,0 +1,4 @@
+﻿model,variant,samples,corpus_cer,corpus_wer,corpus_cla,corpus_crw
+Qwen3VL,base,200,0.055659,0.314228,0.979335,0.688286
+TrOCR-large,base,200,0.040395,0.104575,0.969159,0.897939
+Kraken/CRNN,zero-shot,200,0.447248,0.910508,0.690966,0.102061

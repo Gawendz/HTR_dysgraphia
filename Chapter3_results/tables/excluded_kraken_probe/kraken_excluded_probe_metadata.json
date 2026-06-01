@@ -1,5 +1,0 @@
-{
-  "model_path": "C:\\Magisterka\\FineTuning\\Kraken\\outputs\\dysgraphia_oversampled_local_10ep\\best_0.9586.safetensors",
-  "load_seconds": 0.22521750000305474,
-  "test_csv": "C:\\Magisterka\\Chapter3_results\\tables\\excluded_samples_manifest.csv"
-}

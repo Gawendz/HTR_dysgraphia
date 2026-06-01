@@ -1,4 +1,0 @@
-Model,Dataset,Variant,N,Corpus CER,Corpus WER,Corpus CLA,Corpus CRW,Exact Match,Sec/sample,RSS max MB,VRAM alloc MB,VRAM reserv MB
-Qwen3-VL-2B-Instruct,iam,native,200,0.056,0.315,0.979,0.688,0.170,4.364,591.211,4197.379,4296.000
-Qwen3-VL-2B-Instruct,malaysian,auto_invert,424,0.073,0.231,0.946,0.784,0.460,2.786,1345.746,4219.754,4294.000
-Qwen3-VL-2B-Instruct,malaysian,raw,424,0.074,0.234,0.945,0.778,0.443,2.950,971.430,4220.778,4294.000

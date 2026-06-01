@@ -1,0 +1,12 @@
+pandas
+numpy
+matplotlib
+Pillow
+openpyxl
+jiwer
+torch
+transformers
+accelerate
+peft
+qwen-vl-utils
+kraken

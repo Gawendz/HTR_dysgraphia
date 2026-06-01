@@ -1,0 +1,19 @@
+Model,model_label,group,corpus_cer,samples
+Qwen3-VL LoRA oversampling,"Qwen3-VL
+LoRA oversampling",Dysgraphia,0.0136986301369863,46
+Qwen3-VL LoRA oversampling,"Qwen3-VL
+LoRA oversampling",Other difficulties,0.0178913738019169,36
+Qwen3-VL LoRA oversampling,"Qwen3-VL
+LoRA oversampling",No difficulty,0.0042128914478303,159
+TrOCR-large full FT oversampling,"TrOCR-large
+full FT oversampling",Dysgraphia,0.0190802348336594,46
+TrOCR-large full FT oversampling,"TrOCR-large
+full FT oversampling",Other difficulties,0.0210862619808306,36
+TrOCR-large full FT oversampling,"TrOCR-large
+full FT oversampling",No difficulty,0.0120769554837803,159
+Kraken/CRNN FT oversampling,"Kraken/CRNN
+FT oversampling",Dysgraphia,0.0210371819960861,46
+Kraken/CRNN FT oversampling,"Kraken/CRNN
+FT oversampling",Other difficulties,0.045367412140575,36
+Kraken/CRNN FT oversampling,"Kraken/CRNN
+FT oversampling",No difficulty,0.0190984412301643,159

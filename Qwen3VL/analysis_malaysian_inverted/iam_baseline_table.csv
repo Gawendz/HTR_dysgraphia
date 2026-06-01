@@ -1,2 +1,0 @@
-Model,N,IAM CER,IAM WER,IAM CLA,IAM CRW,Exact Match,Sec/sample,RSS max MB,VRAM alloc MB,VRAM reserv MB
-Qwen3-VL-2B-Instruct,200,0.056,0.315,0.979,0.688,0.170,4.364,591.211,4197.379,4296.000

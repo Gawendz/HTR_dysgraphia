@@ -1,9 +1,0 @@
-model,variant,samples,corpus_cer,corpus_wer,corpus_cla,corpus_crw
-Qwen3VL,LoRA standard,241,0.012022,0.043529,0.990774,0.958212
-Qwen3VL,LoRA oversampling,241,0.008015,0.037145,0.993942,0.964597
-Qwen3VL,LoRA mixed-domain,241,0.013607,0.04585,0.989376,0.957632
-TrOCR-large,full FT standard,241,0.015564,0.053395,0.988444,0.948926
-TrOCR-large,full FT oversampling,241,0.014725,0.052815,0.990028,0.949507
-TrOCR-large,soft FT,241,0.023765,0.087057,0.984343,0.915264
-Kraken/CRNN,FT standard,241,0.02479,0.10679,0.986207,0.900754
-Kraken/CRNN,FT oversampling,241,0.023299,0.095183,0.985741,0.908299

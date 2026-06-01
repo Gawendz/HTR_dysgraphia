@@ -1,26 +1,78 @@
-# Eksperymenty HTR/OCR do pracy magisterskiej
+# HTR Dysgraphia
 
-Repozytorium zawiera kod, notebooki, skrypty ewaluacyjne oraz zagregowane wyniki wykorzystane w pracy magisterskiej dotyczącej rozpoznawania pisma odręcznego. Eksperymenty obejmowały trzy rozwiązania:
+Official repository for the engineering part of a master's thesis on handwritten text recognition (HTR/OCR) for dysgraphia-related handwriting analysis.
 
-- `Qwen3-VL` - model wielomodalny testowany zero-shot oraz dostrajany metodą LoRA,
-- `TrOCR` - transformerowy model OCR/HTR typu encoder-decoder,
-- `Kraken/CRNN` - klasyczny system HTR oparty o rozpoznawanie linii tekstu.
+The repository contains the datasets/manifests, model artifacts, notebooks, source code, and result files used in the experiments. The work compares three model families:
 
-## Najważniejsze katalogi
+- **Qwen3-VL**: multimodal vision-language model evaluated zero-shot and fine-tuned with LoRA,
+- **TrOCR**: transformer OCR/HTR encoder-decoder model,
+- **Kraken/CRNN**: classical HTR pipeline based on line recognition and CTC decoding.
 
-- `Qwen3VL/`, `TrOCR/`, `CRNN/` - skrypty inferencji zero-shot i analizy błędów.
-- `FineTuning/` - skrypty przygotowania danych, treningu i ewaluacji Qwen3-VL, TrOCR oraz Kraken.
-- `Chapter3_results/figures/` - wykresy i przykłady jakościowe użyte w rozdziale wynikowym.
-- `Chapter3_results/tables/` - tabele CSV z najważniejszymi wynikami.
-- `Qwen_final_report/`, `TrOCR_final_report/`, `Kraken_final_report/` - uporządkowane notebooki i podsumowania dla poszczególnych modeli.
-- `Formularze/` - skrypty do przygotowania i walidacji własnego zbioru danych oraz materiały opisowe do części metodologicznej.
-- `chapter3_wyniki.tex`, `chapter4_podsumowanie.tex` - fragmenty pracy z opisem wyników i podsumowaniem.
-- `methodology_chatgpt_context.md` - skrócona notatka metodologiczna dla dalszego pisania pracy.
+## Repository Structure
 
-## Co nie jest wersjonowane
+```text
+datasets/
+  polish_forms/       Polish handwritten forms dataset manifests and statistics
+  malaysian/          Malaysian line-level annotations and manifests
+  iam/                Notes for the IAM-200 control subset
 
-Repo celowo nie przechowuje lokalnych środowisk, zależności, surowych obrazów pisma, paczek ZIP, checkpointów i wag modeli. Te pliki są duże, często odtwarzalne i nie nadają się do zwykłego Gita. Szczegóły znajdują się w `ARTIFACTS_NOT_VERSIONED.md`.
+notebooks/
+  qwen3vl_experiments.ipynb
+  trocr_experiments.ipynb
+  kraken_experiments.ipynb
 
-## Odtworzenie wyników
+src/
+  common/             Shared OCR evaluation utilities
+  zero_shot/          Zero-shot inference scripts
+  fine_tuning/        Fine-tuning and evaluation scripts
 
-Do pełnego odtworzenia treningu potrzebne są zewnętrzne artefakty: dane obrazowe, checkpointy modeli oraz paczki przygotowane do Google Colab. W repo pozostawiono skrypty przygotowania danych i ewaluacji oraz finalne tabele i wykresy, które były podstawą opisów w pracy.
+models/
+  qwen3vl_lora_dysgraphia_oversampled/
+  kraken_crnn_dysgraphia_oversampled/
+  kraken_crnn_standard/
+  trocr_large_dysgraphia_oversampled/
+
+results/
+  figures/            Final plots used in the thesis
+  tables/             Final summary tables
+  zero_shot/          Main zero-shot outputs
+  fine_tuning/        Main fine-tuning outputs
+```
+
+## Datasets
+
+The experiments used:
+
+- a custom Polish handwriting dataset prepared from form scans,
+- a Malaysian handwriting dataset with LPD/PD groups,
+- the IAM line dataset as an external HTR control benchmark.
+
+The repository includes manifests, annotations, and derived statistics needed to inspect the experimental splits and reproduce the evaluation pipeline. Large/private raw scan folders and temporary preprocessing workspaces are intentionally not tracked.
+
+## Models
+
+The repository includes model artifacts that are small enough for GitHub/LFS:
+
+- Qwen3-VL LoRA adapter for the dysgraphia-oversampled experiment,
+- Kraken/CRNN fine-tuned checkpoints for standard and dysgraphia-oversampled variants.
+
+The full TrOCR fine-tuned checkpoint contains a multi-gigabyte `model.safetensors` file and is not stored directly in this repository. The `models/trocr_large_dysgraphia_oversampled/README.md` file documents the checkpoint used and why the full weight file is kept outside Git.
+
+## Notebooks
+
+The `notebooks/` directory contains the cleaned experimental notebooks for the three model families. They are kept as the main readable record of how the experiments were run.
+
+## Metrics
+
+The reported metrics are:
+
+- corpus CER,
+- corpus WER,
+- corpus CLA,
+- corpus CRW,
+- inference time,
+- memory usage where measurable.
+
+## Notes
+
+This repository is intended as a clean research artifact, not as a full local working directory. Scratch scripts, thesis drafting notes, one-off probe scripts, ZIP transfer bundles, local virtual environments, and intermediate inspection folders are excluded.

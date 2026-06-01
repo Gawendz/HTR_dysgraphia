@@ -1,7 +1,0 @@
-model,variant,samples,corpus_cer,corpus_wer,corpus_cla,corpus_crw
-Qwen3VL,zero-shot,241,0.226654,0.507255,0.802703,0.540917
-Qwen3VL,LoRA oversampling,241,0.008015,0.037145,0.993942,0.964597
-TrOCR-large,zero-shot,241,0.581827,1.13697,0.483318,0.049913
-TrOCR-large,full FT oversampling,241,0.014725,0.052815,0.990028,0.949507
-Kraken/CRNN,zero-shot,241,0.770923,1.027278,0.543989,0.004063
-Kraken/CRNN,FT oversampling,241,0.023299,0.095183,0.985741,0.908299

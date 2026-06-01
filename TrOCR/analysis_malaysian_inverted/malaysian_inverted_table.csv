@@ -1,4 +1,0 @@
-Model,Auto CER,Raw CER,Raw-Auto CER,Auto WER,Raw WER,Auto CLA,Raw CLA,Auto CRW,Raw CRW,Auto sec/sample,Raw sec/sample
-trocr-large,0.190,0.451,0.261,0.765,1.051,0.841,0.602,0.357,0.080,2.011,1.712
-trocr-base,0.277,0.830,0.553,0.910,1.234,0.751,0.223,0.261,0.002,1.252,0.981
-trocr-small,0.314,0.889,0.575,0.918,1.342,0.721,0.161,0.205,0.002,0.200,0.149

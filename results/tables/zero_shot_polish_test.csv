@@ -1,0 +1,6 @@
+family,model,samples,corpus_cer,corpus_wer,corpus_cla,corpus_crw
+Qwen3VL,Qwen3-VL-2B-Instruct,241,0.226654,0.507255,0.802703,0.540917
+TrOCR,TrOCR-small-handwritten,241,0.770363,1.219965,0.318826,0.036564
+TrOCR,TrOCR-base-handwritten,241,0.846412,1.401045,0.189376,0.035403
+TrOCR,TrOCR-large-handwritten,241,0.581827,1.13697,0.483318,0.049913
+Kraken/CRNN,McCATMuS,241,0.770923,1.027278,0.543989,0.004063
