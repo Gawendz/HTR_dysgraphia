@@ -76,6 +76,20 @@ fine-tuned TrOCR `model.safetensors` file is kept externally because it is a
 multi-gigabyte artifact. If an external archive with weights is provided, it should
 be unpacked so that its folders match the structure under `models/`.
 
+The external model-weight archive used for the thesis is available on Hugging Face:
+
+https://huggingface.co/Gawendz/HTR_dysgraphia_model_weights
+
+It can be downloaded with:
+
+```bash
+pip install -U huggingface_hub hf_xet
+hf download Gawendz/HTR_dysgraphia_model_weights --local-dir models_external
+```
+
+After downloading, copy the selected folders from `models_external/` into
+`models/` if you want to reproduce the local layout used by the notebooks.
+
 ## Notebooks
 
 The `notebooks/` directory contains re-runnable report notebooks for the three
